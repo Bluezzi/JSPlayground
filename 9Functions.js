@@ -34,13 +34,16 @@ function myFunction (a, b) {
 function toCelsius(fahrenheit) {
     return (5/9) * (fahrenheit-32)
 }
-document.getElementById("demo").innerHTML = toCelsius
+//document.getElementById("demo").innerHTML = toCelsius
     //() Invokes the Function
 
 //Functions used as Variable Values
-let x = toCelsius(77);
-let text = "The temperature is" + x + "Celsius";
-let text = "The temperature is" + toCelsius(77) + "Celsius";
+function tempis (yyy){
+    let x = toCelsius(77);
+let text1 = "The temperature is" + x + "Celsius";
+let text2 = "The temperature is" + toCelsius(yyy) + "Celsius";
+console.log (text2)
+}
 
 //Local Variables
     //Variables are only accessed from within the function
@@ -52,3 +55,5 @@ function myFunction() {
 }
 
 //Code here CAN NOT use carName
+tempis (-9)
+tempis (20)
